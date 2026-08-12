@@ -122,6 +122,37 @@
   .certs li span.src{color:var(--muted); font-size:13px;}
   .cert-link{color:var(--blue); text-decoration:none;}
   .cert-link:hover{text-decoration:underline;}
+
+  /* ---------- CV download buttons ---------- */
+  .cv-buttons{
+    display:flex; flex-wrap:wrap; gap:14px;
+    margin-top:28px;
+  }
+  .cv-btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:13px 22px;
+    border-radius:10px;
+    font-family:'IBM Plex Sans Arabic','IBM Plex Sans',sans-serif;
+    font-weight:600; font-size:15px;
+    text-decoration:none;
+    border:1.5px solid var(--ink);
+    transition:transform .15s ease, background .15s ease, color .15s ease;
+  }
+  .cv-btn svg{width:18px; height:18px; flex-shrink:0;}
+  .cv-btn.primary{
+    background:var(--ink); color:#FAF9F5;
+  }
+  .cv-btn.primary:hover{
+    background:var(--blue); border-color:var(--blue);
+    transform:translateY(-2px);
+  }
+  .cv-btn.secondary{
+    background:transparent; color:var(--ink);
+  }
+  .cv-btn.secondary:hover{
+    background:var(--ink); color:#FAF9F5;
+    transform:translateY(-2px);
+  }
   @media (max-width:820px){ .about-grid{grid-template-columns:1fr;} }
 
   /* ---------- Experience timeline ---------- */
@@ -318,6 +349,16 @@
           <li><b>English Level</b><span class="src en">B2</span></li>
         </ul>
       </div>
+    </div>
+    <div class="cv-buttons">
+      <a href="cv.pdf" download class="cv-btn primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        تحميل CV
+      </a>
+      <a href="cv-ats.pdf" download class="cv-btn secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        تحميل C.V ATS
+      </a>
     </div>
   </section>
 
