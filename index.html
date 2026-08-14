@@ -56,6 +56,12 @@
   .pillars-nav a:hover{color:var(--ink);}
   .lang-switch{font-size:13px; font-weight:600; color:var(--blue); text-decoration:none; white-space:nowrap;}
   .lang-switch:hover{text-decoration:underline;}
+  .flag{display:inline-block; width:18px; height:12px; border-radius:2px; vertical-align:-1px; position:relative; overflow:hidden; box-shadow:0 0 0 1px rgba(0,0,0,.12);}
+  .flag-eg{background:linear-gradient(to bottom,#CE1126 0 33.33%,#FFFFFF 33.33% 66.66%,#000000 66.66% 100%);}
+  .flag-eg::after{content:''; position:absolute; width:4px; height:5px; left:7px; top:3.5px; background:#C09300; border-radius:50%;}
+  .flag-us{background:repeating-linear-gradient(to bottom,#B22234 0 1px,#FFFFFF 1px 2px);}
+  .flag-us::before{content:''; position:absolute; left:0; top:0; width:8px; height:7px; background:#3C3B6E;}
+  .flag-us::after{content:'✦'; position:absolute; left:1px; top:-2px; color:#fff; font-size:6px; line-height:7px;}
   .dot{width:7px; height:7px; border-radius:50%; display:inline-block;}
   .dot.blue{background:var(--blue);}
   .dot.gold{background:var(--gold);}
@@ -276,7 +282,7 @@
 <li><a href="#freelance"><span class="dot teal"></span>Freelance</a></li>
 <li><a href="#contact"><span class="dot blue"></span>Contact</a></li>
 </ul>
-<a class="lang-switch" href="index-ar.html"><span aria-hidden="true">🇪🇬</span> Arabic</a>
+<a class="lang-switch" href="index-ar.html"><span class="flag flag-eg" aria-hidden="true"></span> Arabic</a>
 </div>
 </header>
 <main class="wrap">

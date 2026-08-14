@@ -79,6 +79,14 @@
   footer{padding:40px 0; text-align:center; font-size:12.5px; color:var(--muted);}
   .language-switch{float:right; color:var(--blue); font-size:13px; font-weight:600; text-decoration:none; margin-inline-start:18px; direction:ltr;}
   .language-switch:hover{text-decoration:underline;}
+
+  .flag{display:inline-block; width:18px; height:12px; border-radius:2px; vertical-align:-1px; position:relative; overflow:hidden; box-shadow:0 0 0 1px rgba(0,0,0,.12);}
+  .flag-eg{background:linear-gradient(to bottom,#CE1126 0 33.33%,#FFFFFF 33.33% 66.66%,#000000 66.66% 100%);}
+  .flag-eg::after{content:''; position:absolute; width:4px; height:5px; left:7px; top:3.5px; background:#C09300; border-radius:50%;}
+  .flag-us{background:repeating-linear-gradient(to bottom,#B22234 0 1px,#FFFFFF 1px 2px);}
+  .flag-us::before{content:''; position:absolute; left:0; top:0; width:8px; height:7px; background:#3C3B6E;}
+  .flag-us::after{content:'✦'; position:absolute; left:1px; top:-2px; color:#fff; font-size:6px; line-height:7px;}
+
 </style>
 </head>
 <body>
@@ -86,7 +94,7 @@
 <header class="top">
   <div class="wrap">
     <a href="index.html" class="back-link">← Back to portfolio</a>
-    <a class="language-switch" href="certificates.html"><span aria-hidden="true">🇪🇬</span> Arabic</a>
+    <a class="language-switch" href="certificates.html"><span class="flag flag-eg" aria-hidden="true"></span> Arabic</a>
   </div>
 </header>
 
